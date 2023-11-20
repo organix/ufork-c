@@ -117,3 +117,7 @@ Enter complete S-expressions at the prompt to experiment with this actor-based S
   * [Meta-circular LISP/Scheme](lisp.md) interpreter evolution
   * [Virtual Machine](vm.md) implementation details
   * [Garbage-collected](gc.md) memory management
+
+## License
+
+[Apache License](LICENSE), Version 2.0
