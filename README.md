@@ -1,6 +1,7 @@
-# uFork Simulator in C
+# μFork Simulator in C
 
-This [implementation](vm.md) of the [**uFork** virtual machine](../ufork.md)
+This is a prototype implementation of the
+[**uFork** virtual machine](https://github.com/organix/uFork)
 is written in C and compilable for 16, 32, or 64-bits words.
 It features a gdb-style debugger capable of single-stepping virtual machine instructions.
 Implemented on this platform are a PEG-parser toolkit
@@ -15,7 +16,8 @@ $ ./ufork
 
 NOTE: This is a simulator implementation of a prototype for proof-of-concept.
 It produces significant amounts of debugging/tracing output.
-The [Rust/WASM version](../ufork-wasm/README.md) is intended to be a more-robust implementation.
+The [Rust/WASM version](https://github.com/organix/uFork/tree/main/ufork-wasm)
+is a newer and more-robust implementation.
 
 ## Assembly-Language Debugger
 
@@ -34,6 +36,7 @@ instruction tracing off
 (@104) 105: VM_push{v:^66,k:106}
 @ c
 ```
+
 ### Debugger Commands
 
 This table summarizes the commands available at the debugger prompt.
@@ -85,7 +88,7 @@ target actor
 ## Scheme Read-Eval-Print Loop (REPL)
 
 The demonstration application implemented by this simulator prototype
-is a Real-Eval-Print loop for a dialect of Scheme with actor extensions.
+is a Read-Eval-Print loop for a dialect of Scheme with actor extensions.
 The REPL is fed by a PEG parser that reads from the console
 and generates S-expressions for evaluation.
 Lines beginning with `[+888]` display the parsed S-expression.
