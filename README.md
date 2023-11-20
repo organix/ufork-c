@@ -3,7 +3,11 @@
 This is a prototype implementation of the
 [**uFork** virtual machine](https://github.com/organix/uFork)
 is written in C and compilable for 16, 32, or 64-bits words.
-It features a gdb-style debugger capable of single-stepping virtual machine instructions.
+It features a gdb-style debugger
+capable of single-stepping virtual machine instructions.
+
+![μFork logo](ufork_logo.svg)
+
 Implemented on this platform are a PEG-parser toolkit
 and a concurrent Scheme dialect with actor extensions.
 An assembler for virtual-machine instructions is also available from Scheme.
