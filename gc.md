@@ -23,7 +23,7 @@ Cells in the range \[`START`, `CELL_BASE`\) are initially marked `GC_GENX`.
 ## GC Algorithm
 
 Garbage collection is concurrent with allocation and mutation.
-An increment of the garbage collector algortihm runs between each instruction execution cycle.
+An increment of the garbage collector algorithm runs between each instruction execution cycle.
 The overall algorithm is roughly the following:
 
 1. Swap generations (`GC_GENX` <--> `GC_GENY`)
