@@ -1,7 +1,10 @@
 # μFork Simulator in C
 
-This is a prototype implementation of the
-[**uFork** virtual machine](https://github.com/organix/uFork)
+**WARNING: This legacy implementation is incompatible
+with the [current μFork](https://github.com/organix/uFork) instruction-set!**
+
+This simulator for the
+**uFork** virtual machine prototype
 is written in C and compilable for 16, 32, or 64-bits words.
 It features a gdb-style debugger
 capable of single-stepping virtual machine instructions.
@@ -17,11 +20,6 @@ The following commands build and run the simulator.
 $ make clean all
 $ ./ufork
 ```
-
-NOTE: This is a simulator implementation of a prototype for proof-of-concept.
-It produces significant amounts of debugging/tracing output.
-The [Rust/WASM version](https://github.com/organix/uFork/tree/main/ufork-wasm)
-is a newer and more-robust implementation.
 
 ## Assembly-Language Debugger
 
